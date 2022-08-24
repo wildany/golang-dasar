@@ -37,6 +37,18 @@ func main() {
 	var tesCap = months[2:4]
 	fmt.Println(cap(tesCap))
 
-	// newSlice := make([]string, 2, 5)
+	newSlice := make([]string, 2, 5)
+	newSlice[0] = "Dany"
+	newSlice[1] = "Sihab"
+	fmt.Println(newSlice)
+	fmt.Println(len(newSlice))
+	fmt.Println(cap(newSlice))
+
+	copySlice := make([]string, len(newSlice), cap(newSlice))
+	copy(copySlice, newSlice)
+	fmt.Println(copySlice)
+
+	iniArrat := [...]int{1, 2, 3, 4, 5} //ini Array, ... digunakan jika belum mengetahui kapasitasnya
+	iniSlice := []int{1, 2, 3, 4, 5}
 
 }

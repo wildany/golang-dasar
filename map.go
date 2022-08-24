@@ -3,6 +3,12 @@ package main
 import "fmt"
 
 func main() {
+
+	// person := map[typekey]typevalue{
+	// 	"name":    "Dany",
+	// 	"address": "Sidoarjo",
+	// }
+
 	person := map[string]string{
 		"name":    "Dany",
 		"address": "Sidoarjo",
